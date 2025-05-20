@@ -1,12 +1,48 @@
-# React + Vite
+# 💬 SparshGPT – Chat Application using React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive and modern AI-powered chat application built with React, styled with custom CSS, and integrated with a backend to fetch dynamic AI responses.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✨ Clean and responsive UI
+- 🧠 User and assistant messages styled separately
+- ⌨️ Submit message with `Enter` key or by clicking the button
+- 📜 Auto-clears input field after submission
+- 🕘 Maintains chat history by session titles
+- ➕ Start new chats without losing previous history
+- 🔒 Scrollbar hidden for a cleaner feed look
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+*(Add screenshots or a GIF demo here if you want)*
+
+---
+
+## 📁 Project Structure
+
+src/
+├── App.jsx
+├── App.css
+└── index.js
+
+
+---
+
+## ⚙️ Setup & Installation
+
+### Prerequisites
+- Node.js & npm installed
+- Backend server running at `http://localhost:8000/completions`
+
+### Installation Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/sparshgpt.git
+   cd sparshgpt
+   npm install
+   npm start
+   http://localhost:8000/completions
+  ```bash
