@@ -45,4 +45,28 @@ src/
    npm install
    npm start
    http://localhost:8000/completions
-  ```bash
+
+### Tech Stack
+- Frontend: React.js
+
+- Styling: CSS
+
+- Icons: react-icons
+
+- Backend: Custom AI backend or OpenAI-compatible API
+
+### Future Improvements
+Add typing indicator (agent is typing...)
+
+Add loading spinner while waiting for response
+
+Save chat history in localStorage or database
+
+Authentication and login
+
+Deployed on Netlify
+
+## 🙋‍♂️ Made by
+**Sparsh** – [LinkedIn](https://www.linkedin.com/in/unsparsh)
+
+Feel free to fork, contribute, or give feedback!
