@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.side-bar {
+  min-width: 244px;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-bar button {
+  background-color: transparent;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.side-bar .history {
+  margin: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.history li {
+  list-style: none;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.history li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.side-bar nav {
+  text-align: center;
+  border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  padding: 10px;
+  font-size: 13px;
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #212121;
+}
+
+.main h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Feed Section */
+.feed {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feed li {
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 900px;
+  align-self: center;
+}
+
+.feed .role {
+  color: #42a5f5;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.feed .chatMessage {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Input Section */
+.bottom-section {
+  width: 100%;
+  padding: 15px;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+.input-container input {
+  width: 100%;
+  border: none;
+  background-color: #303030;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+#submit {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Footer Info */
+.info {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .side-bar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: center;
+  }
+
+  .side-bar .history {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .side-bar .history li {
+    white-space: nowrap;
+    padding: 10px;
+  }
+
+  .main h1 {
+    font-size: 24px;
+  }
+
+  .input-container input {
+    font-size: 13px;
+    padding: 12px 40px 12px 15px;
+  }
+
+  .feed li {
+    padding: 12px 15px;
+  }
+
+  .feed .chatMessage {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 10px;
+  }
+}
